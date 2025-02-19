@@ -8,9 +8,6 @@ let mainImage = document.getElementById('mainImage');
 let nameInputContainer = document.getElementById('nameInputContainer');
 let confessionContainer = document.getElementById('confessionContainer');
 let buttonsContainer = document.querySelector('.buttons');
-let xiaohongshuLink = document.getElementById('xiaohongshuLink');
-let douyinLink = document.getElementById('douyinLink');
-let repoLink = document.getElementById('repoLink');
 
 // 显示名字输入框
 nameInputContainer.style.display = 'block';
@@ -23,10 +20,7 @@ confirmNameButton.addEventListener('click', function () {
     const safeUsername = username? username.substring(0, maxLength) : "";
     // 隐藏名字输入框，显示表白内容
     nameInputContainer.style.display = 'none';
-    // 隐藏新增的链接元素
-    xiaohongshuLink.style.display = 'none';
-    douyinLink.style.display = 'none';
-    repoLink.style.display = 'none';
+
     confessionContainer.style.display = 'block';
     // 给按钮容器添加动画类名
     buttonsContainer.classList.add('slide-up-fade-in');
